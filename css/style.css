@@ -480,8 +480,8 @@ blockquote {
 
 /* Pagination */
 .pagination {
-	margin: 0;
-	margin-bottom: 30px;
+	margin: 0 0 50px 0;
+
 }
 .pagination li a {
 	border: none;
@@ -522,8 +522,8 @@ blockquote {
 }
 .jt-portfolio-filters li {
 	display: inline-block;
-	margin: 0;
-	margin-right: 5px;
+	margin: 0 5px 0 0;
+
 }
 .jt-portfolio-filters .jt-filter-active a {
 	background: #e8603c;
@@ -534,7 +534,6 @@ blockquote {
 	font-family: "Bebas", Arial, Helvetica, sans-serif;
 	color: #BFB9B9;
 	padding: 10px;
-	padding-bottom: 8px;
 	transition: color .5s, background .5s;
 }
 .jt-portfolio-filters a:hover {
