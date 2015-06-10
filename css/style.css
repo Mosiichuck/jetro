@@ -14,22 +14,37 @@ img {
 	font-weight: normal;
 	font-style: normal;
 }
-
-
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: url("../img/bgi.png") repeat;
+}
+a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, a {
+	font-family: 'Bebas', sans-serif;
+	word-spacing: 3px;
+}
+.container {
+	max-width: 960px;
+	position: relative;
+	z-index: 2;
+	background: url("../img/bgi.png") repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
 .navbar {
+	font-family: 'Bebas', sans-serif;
 	border: none;
 	position: relative;
 	min-height: 78px;
 	margin-bottom: 0;
 	z-index: 1;
 
-}
-
-.container {
-	max-width: 960px;
-	position: relative;
-	background: #ffffff;
-	z-index: 2;
 }
 
 .navbar .navbar-toggle .icon-bar {
@@ -103,7 +118,7 @@ img {
 
 /*IMG*/
 
-.jetro-img {
+.jetro-img img{
 	margin-top: 20px;
 }
 
@@ -147,6 +162,7 @@ img {
 	color: #fff;
 	text-transform: uppercase;
 	border: none;
+
 }
 
 /*recent*/
@@ -205,9 +221,7 @@ img {
 	border-right: 10px solid #fff;
 }
 
-.fot-right {
-	margin-left: 36px;
-}
+
 
 .jetro-fot h1 {
 	font: 20px "Bebas", Arial, Helvetica, sans-serif;
@@ -617,3 +631,54 @@ textarea:-ms-input-placeholder {
 	background: #fff;
 }
 
+
+
+/*------@MEDIA---------*/
+@media (max-width: 545px) {
+	.carousel-caption {
+		display: none;
+	}
+	.jt-about-content blockquote,
+	.jt-aside-container {
+		margin-left: 0;
+	}
+}
+@media (min-width: 768px) {
+	.navbar > .container .navbar-brand,
+	.navbar > .container-fluid .navbar-brand {
+		margin-left: 0;
+	}
+}
+@media (max-width: 767px) {
+	.navbar-nav {
+		margin: 0;
+	}
+
+	.navbar .nav > li > a {
+		padding: 0 0 0 10px;
+	}
+
+	.navbar .navbar-nav > li > a {
+		line-height: 40px;
+		margin: 10px;
+		color: #e8663c;
+		background: rgba(232, 102, 60, 0.30);
+		filter: alpha(opacity=80);
+	}
+
+	.navbar .nav > li > a > span {
+		color: #e8663c;
+	}
+
+	.navbar .navbar-nav > li > a:hover,
+	.navbar .nav > li > a:hover span {
+		color: #cacaca;
+	}
+
+	.navbar .navbar-brand {
+		padding-left: 10px;
+	}
+	.jt-main-container {
+		margin: 0 auto;
+	}
+}
